@@ -16,6 +16,7 @@ public:
   
   KeypadInput* initKeypad();
   LCDOutput* initLCD();
+  Communicator* initComm();
 
 };
 
@@ -54,5 +55,15 @@ LCDOutput* Initializer::initLCD() {
   
   return lcdOutput;
 }
+
+Communicator* Initializer::initComm() {
+  char field_separator = ',';
+  char command_separator = ';';
+  
+  Communicator *communicator = &Communicator(field_separator, command_separator);
+  
+  return communicator;
+}
+
 
 #endif
