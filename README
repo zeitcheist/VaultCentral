@@ -1,0 +1,6 @@
+VaultCentral
+Vault opened using the account holder's fingerprint and PIN.
+
+Using Arduino as the uC for PIN input and LCD output.
+
+The software in the computer to be used for administration is written in Java.
